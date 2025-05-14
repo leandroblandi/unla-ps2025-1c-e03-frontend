@@ -4,21 +4,48 @@ import { LoginComponent } from './auth/login/login.component';
 import { AllAcommodationsComponent } from './home/all-acommodations/all-acommodations.component';
 import { AllExperiencesComponent } from './home/all-experiences/all-experiences.component';
 
+
+/**
+ * 
+ * En este array se registran las diferentes rutas de la aplicación.
+ * 
+ * El 'path' sería la ruta de la aplicacion, y el 'component' sería el componente/vista
+ * que corresponderá con esa ruta.
+ * 
+ * Si se desea añadir una nueva ruta, añadir un nuevo elemento en el array con la misma estructura
+ * que los demás.
+ * 
+ */
+
 export const routes: Routes = [
+  
+  // Ruta de registro
   {
     path: "register",
     component: RegisterComponent,
   },
+
+  // Ruta de inicio de sesión
   {
     path: "login",
     component: LoginComponent
   },
+
+  // Ruta de listado de alojamientos
   {
     path: "all-acommodations",
     component: AllAcommodationsComponent
   },
+
+  // Ruta de listado de experiencias
   {
     path: "all-experiences",
     component: AllExperiencesComponent
-  }
+  },
+
+  // Cualquier otra ruta, redirige a listado de experiencias
+  {
+    path: "**",
+    redirectTo: "all-acommodations"
+  },
 ];

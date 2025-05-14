@@ -1,5 +1,23 @@
+
+<!-- 
+
+El AppComponent es el punto de partida de la aplicación, es el 
+primero que se ejecuta, y que puede contener a los demás componentes.
+
+NOTA:
+
+Los estilos aplicados a este componente, se aplican en cascada a todos los demás
+que estén dentro del mismo.
+
+-->
+
+<!-- Header de la aplicación -->
 <app-header></app-header>
+
+<!-- Componentes a renderizar mediante el ruteo -->
 <main>
   <router-outlet></router-outlet>
 </main>
+
+<!-- Footer de la aplicación -->
 <app-footer></app-footer>

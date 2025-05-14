@@ -119,3 +119,7 @@
   color: #fff;
   transition: all .2s;
 }
+
+.header ul li a.active-link {
+  color: #1c7ce2;
+}

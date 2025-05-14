@@ -1,0 +1,43 @@
+.footer {
+  width: 95%;
+  background: transparent;
+  border-radius: 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #f1f5fc;
+  font-weight: 600;
+  color: #464f6d;
+  font-size: 15px;
+}
+
+.footer .top-section, .footer .bottom-section {
+  padding: 45px 35px;
+  width: 30%;
+}
+
+.footer .top-section .brand-info img {
+  width: 60px;
+  height: fit-content;
+  filter: grayscale(100%);
+}
+
+.footer .top-section .social-media {
+  display: flex;
+}
+
+.footer a { 
+  color: #1c7ce2;
+  transition: all .2s;
+}
+
+.footer a:hover { 
+  color: #186ac1;
+  transition: all .2s;
+}
+
+.social-media a {
+  display: block;
+  text-decoration: none;
+  margin-right: 15px;
+}

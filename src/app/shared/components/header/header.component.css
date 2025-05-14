@@ -33,6 +33,12 @@
 .logo-section h1 {
   font-weight: 500;
   color: #1c7ce2;
+  transition: all .2s;
+}
+
+.logo-section h1:hover {
+  color: #1869c0;
+  transition: all .2s;
 }
 
 /* MENU STYLES */
@@ -58,10 +64,12 @@
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 20px;
+  transition: all .2s;
 }
 
 .menu-section ul li a:hover {
   color: #1c7ce2;
+  transition: all .2s;
 }
 
 .header .auth-section {
@@ -76,6 +84,7 @@
 
 .auth-section ul li {
   list-style-type: none;
+  font-weight: 500;
 }
 
 .auth-section ul li a {
@@ -83,12 +92,14 @@
   text-decoration: none;
   color: #fff;
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 5px 15px;
   border-radius: 5px;
   margin: 0 10px;
   background: transparent;
   color: #1c7ce2;
   border: 2px solid #1c7ce2;
+  font-size:18px;
+  transition: all .2s;
 }
 
 .auth-section ul li a.a-iniciar-sesion {
@@ -100,9 +111,11 @@
   color: #1869c0;
   background: #e1e5ec;
   border-color: #1869c0;
+  transition: all .2s;
 }
 
 .auth-section ul li a.a-iniciar-sesion:hover {
   background: #1869c0;
   color: #fff;
+  transition: all .2s;
 }

@@ -4,7 +4,7 @@
 .header {
   width: 95%;
   background: #f1f5fc;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 10px auto;
   display: flex;
   justify-content: space-between;

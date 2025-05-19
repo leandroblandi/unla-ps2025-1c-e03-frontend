@@ -25,9 +25,24 @@
 
   <!-- Sección de botones de autenticación -->
   <div class="auth-section">
-    <ul>
-      <li><a routerLink="/register">Registrarse</a></li>
-      <li><a routerLink="/login" class="a-iniciar-sesion" >Iniciar sesión</a></li>
-    </ul>
+
+    <button class="become-host-btn">
+      <p>Convertite en anfitrión</p>
+    </button>
+
+    <button class="menu-dropdown">
+      <i class="fa-solid fa-globe"></i>
+    </button>
+
+    <button class="menu-dropdown" (click)="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    @if (abrirMenu) {
+      <ul class="auth-menu">
+        <li><a routerLink="/register">Registrarse</a></li>
+        <li><a routerLink="/login" class="a-iniciar-sesion" >Iniciar sesión</a></li>
+      </ul>
+    }
   </div>
 </div>

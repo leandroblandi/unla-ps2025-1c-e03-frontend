@@ -5,3 +5,13 @@
   font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 11px;
 }
+
+app-header {
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+app-footer {
+  background: #fafafa;
+  border-top: 1px solid #f0f0f0;
+}

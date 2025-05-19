@@ -3,7 +3,7 @@
 
 .header {
   width: 95%;
-  background: #f1f5fc;
+  background: transparent;
   border-radius: 10px;
   margin: 10px auto;
   display: flex;
@@ -26,7 +26,7 @@
 .logo-section img {
   width: 100px;
   height: fit-content;
-  margin: 0 30px 0 40px;
+  margin: 0 30px 0 0;
   transition: all .2s;
 }
 
@@ -73,49 +73,91 @@
   display: flex;
   align-items: center;
   margin: 0 30px 0 0;
-}
-
-.auth-section ul {
-  display: flex;
-}
-
-.auth-section ul li {
-  list-style-type: none;
-  font-weight: 500;
+  gap: 10px;
 }
 
 .auth-section ul li a {
   display: block;
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
   padding: 5px 15px;
   border-radius: 5px;
   margin: 0 10px;
-  background: transparent;
-  color: #ff5a5f;
-  border: 1px solid #ff5a5f;
-  font-size:18px;
-}
-
-.auth-section ul li a.a-iniciar-sesion {
-  background: #ff5a5f;
-  color: #fff;
-}
-
-.auth-section ul li a:hover {
-  color: #e44a4f;
-  background: #e1e5ec;
-  border-color: #e44a4f;
+  color: #464f6d;
+  font-size: 15px;
   transition: all .2s;
 }
 
-.auth-section ul li a.a-iniciar-sesion:hover {
-  background: #e44a4f;
-  color: #fff;
+
+.auth-section ul li a:hover {
+  color: #e44a4f;
   transition: all .2s;
 }
 
 .header ul li a.active-link {
   color: #e44a4f;
+}
+
+.become-host-btn {
+  font-family: "Segoe UI";
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  color: #464f6d;
+  font-size: 14px;
+  border-radius: 30px;
+  margin-right: 10px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.become-host-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.menu-dropdown {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: #464f6d;
+  font-size: 15px;
+  transition: all .2s;
+
+}
+
+.menu-dropdown:hover {
+  background: #e0e0e0;
+  transition: all .2s;
+}
+
+.auth-menu {
+  position: absolute;
+  top: 65px;
+  right: 70px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  list-style: none;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 200px;
+}
+
+.auth-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.auth-menu li a {
+  text-decoration: none;
+  color: #222;
+  display: block;
+  font-weight: 600;
 }

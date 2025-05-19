@@ -9,5 +9,9 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  public abrirMenu: boolean = false;
+  
+  public toggleMenu(): void {
+    this.abrirMenu = !this.abrirMenu;
+  }
 }

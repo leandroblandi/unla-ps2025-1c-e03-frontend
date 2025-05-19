@@ -12,7 +12,13 @@
       @for (alojamiento of alojamientos; track $index) 
       {
         <div class="acommodation" [routerLink]="['/acommodations', alojamiento.id_alojamiento]" >
-          <img src="https://placehold.co/240x250/png" [alt]="alojamiento.titulo">
+          
+          <div class="acommodation-img">
+            <img src="https://placehold.co/240x250/png" [alt]="alojamiento.titulo">
+            <button class="favorite-button">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
           <p [title]="alojamiento.titulo">{{alojamiento.titulo}}</p>
           <span>${{alojamiento.precio_por_noche}} USD por noche • {{alojamiento.capacidad_personas}} personas</span>
         </div>
@@ -33,8 +39,14 @@
       @for (alojamiento of alojamientos; track $index) 
       {
         <div class="acommodation" [routerLink]="['/acommodations', alojamiento.id_alojamiento]" >
-          <img src="https://placehold.co/240x250/png" [alt]="alojamiento.titulo">
-          <p>{{alojamiento.titulo}}</p>
+          
+          <div class="acommodation-img">
+            <img src="https://placehold.co/240x250/png" [alt]="alojamiento.titulo">
+            <button class="favorite-button">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <p [title]="alojamiento.titulo">{{alojamiento.titulo}}</p>
           <span>${{alojamiento.precio_por_noche}} USD por noche • {{alojamiento.capacidad_personas}} personas</span>
         </div>
       }

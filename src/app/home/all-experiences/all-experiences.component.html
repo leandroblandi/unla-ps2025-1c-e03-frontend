@@ -1,18 +1,20 @@
 <div class="all-experiences">
-  
   <div class="experiences-group">
-
     <div class="experience-group-title">
       <h2>Disponibles hoy en Buenos Aires</h2>
       <i class="fa-solid fa-chevron-right"></i>
     </div>
-
     <div class="experiences-group-accomodations">
 
       @for (experiencia of experiencias; track $index) 
       {
         <div class="experience" [routerLink]="['/experiences', experiencia.id_experiencia]" >
-          <img src="https://placehold.co/240x250/png" [alt]="experiencia.titulo">
+          <div class="experience-img">
+            <img src="https://placehold.co/240x250/png" [alt]="experiencia.titulo">
+            <button class="favorite-button">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
           <p [title]="experiencia.titulo">{{experiencia.titulo}}</p>
           <span>${{experiencia.precio_por_persona}} USD por noche • {{ experiencia.tiene_cupo ? "Aún hay cupos" : "Ya no hay cupos" }}</span>
         </div>
@@ -33,9 +35,14 @@
       @for (experiencia of experiencias; track $index) 
       {
         <div class="experience" [routerLink]="['/experiences', experiencia.id_experiencia]" >
-          <img src="https://placehold.co/240x250/png" [alt]="experiencia.titulo">
-          <p>{{experiencia.titulo}}</p>
-          <span>${{experiencia.precio_por_persona}} USD por persona • {{ experiencia.tiene_cupo ? "Aún hay cupos" : "Ya no hay cupos" }}</span>
+          <div class="experience-img">
+            <img src="https://placehold.co/240x250/png" [alt]="experiencia.titulo">
+            <button class="favorite-button">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <p [title]="experiencia.titulo">{{experiencia.titulo}}</p>
+          <span>${{experiencia.precio_por_persona}} USD por noche • {{ experiencia.tiene_cupo ? "Aún hay cupos" : "Ya no hay cupos" }}</span>
         </div>
       }
 

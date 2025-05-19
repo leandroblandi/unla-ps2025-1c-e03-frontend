@@ -48,6 +48,7 @@
   transition: all .2s;
   cursor: pointer;
   outline: 0 none;
+
 }
 
 .acommodation:hover {
@@ -78,3 +79,31 @@
   object-fit: cover;
 }
 
+.acommodation .acommodation-img {
+  width: 240px;
+  height: 250px;
+  position: relative;
+}
+
+.acommodation-img .favorite-button {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border-radius: 50%;
+  border: none;
+  z-index: 10;
+  background: transparent;
+}
+
+.favorite-button i {
+  cursor: pointer;
+  font-size: 18px;
+  color: #646875;
+  transition: all .2s;
+}
+
+.favorite-button i:hover {
+  color: #e44a4f;
+  transform: scale(1.1);
+  transition: all .2s;
+}

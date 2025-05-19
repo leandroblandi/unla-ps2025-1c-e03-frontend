@@ -32,12 +32,12 @@
 }
 
 .footer a { 
-  color: #1c7ce2;
+  color: #ff5a5f;
   transition: all .2s;
 }
 
 .footer a:hover { 
-  color: #186ac1;
+  color: #e44a4f;
   transition: all .2s;
 }
 

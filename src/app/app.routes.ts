@@ -33,24 +33,33 @@ export const routes: Routes = [
 
   // Ruta de listado de alojamientos
   {
-    path: "all-acommodations",
+    path: "acommodations",
     component: AllAcommodationsComponent
   },
 
   // Ruta de listado de experiencias
   {
-    path: "all-experiences",
+    path: "experiences",
     component: AllExperiencesComponent
   },
 
+  // Detalle de alojamientos
   {
-    path: "acommodation/:id",
+    path: "acommodations/:id",
     component: AllExperiencesComponent
   },
+
+
+  // Detalle de experiencias
+  {
+    path: "experiences/:id",
+    component: AllExperiencesComponent
+  },
+
 
   // Cualquier otra ruta, redirige a listado de experiencias
   {
     path: "**",
-    redirectTo: "all-acommodations"
+    redirectTo: "acommodations"
   },
 ];

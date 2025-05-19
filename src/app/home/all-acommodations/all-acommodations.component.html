@@ -11,7 +11,7 @@
 
       @for (alojamiento of alojamientos; track $index) 
       {
-        <div class="acommodation" [routerLink]="['/acommodation', alojamiento.id_alojamiento]" >
+        <div class="acommodation" [routerLink]="['/acommodations', alojamiento.id_alojamiento]" >
           <img src="https://placehold.co/240x250/png" [alt]="alojamiento.titulo">
           <p [title]="alojamiento.titulo">{{alojamiento.titulo}}</p>
           <span>${{alojamiento.precio_por_noche}} USD por noche • {{alojamiento.capacidad_personas}} personas</span>
@@ -32,7 +32,7 @@
 
       @for (alojamiento of alojamientos; track $index) 
       {
-        <div class="acommodation" [routerLink]="['/acommodation', alojamiento.id_alojamiento]" >
+        <div class="acommodation" [routerLink]="['/acommodations', alojamiento.id_alojamiento]" >
           <img src="https://placehold.co/240x250/png" [alt]="alojamiento.titulo">
           <p>{{alojamiento.titulo}}</p>
           <span>${{alojamiento.precio_por_noche}} USD por noche • {{alojamiento.capacidad_personas}} personas</span>

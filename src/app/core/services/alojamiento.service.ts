@@ -194,7 +194,7 @@ export class AlojamientoService {
   constructor() { }
 
 
-  public getAlojamientos() {
+  public getAlojamientos(): Alojamiento[] {
     return this.MOCK_ALOJAMIENTOS;
   }
 

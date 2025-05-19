@@ -43,6 +43,11 @@ export const routes: Routes = [
     component: AllExperiencesComponent
   },
 
+  {
+    path: "acommodation/:id",
+    component: AllExperiencesComponent
+  },
+
   // Cualquier otra ruta, redirige a listado de experiencias
   {
     path: "**",

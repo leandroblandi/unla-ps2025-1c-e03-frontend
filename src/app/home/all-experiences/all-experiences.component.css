@@ -76,6 +76,7 @@
   width: 240px;
   height: 250px;
   object-fit: cover;
+  -webkit-user-drag: none;
 }
 
 .experience .experience-img {

@@ -2,15 +2,24 @@
   width: 95%;
   margin: 10px auto 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   font-weight: 600;
   color: #464f6d;
   font-size: 15px;
+  flex-wrap: wrap;
 }
 
 .footer .top-section, .footer .bottom-section {
   padding: 45px 35px;
-  width: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer .bottom-section {
+  padding-top: 0;
 }
 
 .footer .top-section .brand-info img {
@@ -51,4 +60,34 @@
 .footer .top-section p.social-media-desc {
   margin-top: 20px;
   font-weight: 600;
+}
+
+.footer .section.config {
+  display: flex;
+  gap: 30px;
+}
+
+.section.info {
+  display: flex;
+  gap: 15px;
+}
+
+.section.info span.words {
+  cursor: pointer;
+}
+
+.section.info span.words:hover {
+  text-decoration: underline;
+}
+
+.section.config p {
+  display: block;
+  width: fit-content;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.section.config p:hover {
+  transition: all .2s;
+  transform: scale(1.05);
 }

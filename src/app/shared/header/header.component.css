@@ -169,3 +169,26 @@
   display: block;
   font-weight: 600;
 }
+
+@media (max-width: 870px) {
+
+  .logo-section img {
+    margin-left: 15px;
+  }
+
+  .header .menu-section {
+    display: none;
+  }
+
+  .header .auth-section .become-host-btn {
+    display: none;
+  }
+
+  .auth-menu {
+    top: 50px;
+    right: 40px;
+  }
+
+
+
+}

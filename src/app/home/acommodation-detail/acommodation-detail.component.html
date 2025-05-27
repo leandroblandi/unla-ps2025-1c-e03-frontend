@@ -1,0 +1,35 @@
+<div class="acommodation-detail">
+
+  <div class="detail-header">
+    <h1>{{alojamiento?.titulo}}</h1>
+  </div>
+
+  <div class="detail-body">
+    
+    <div class="detail-image-container">
+      <img class="main-image" [src]="alojamiento!.url_imagenes[0]" [alt]="alojamiento!.descripcion">
+      <img class="small-image" src="https://placehold.co/240x250/png">
+      <img class="small-image" src="https://placehold.co/240x250/png">
+    </div>
+    
+
+    <div class="flex-container">
+      <div class="detail-info">
+        <p>Propiedad alquilada entera en {{alojamiento?.direccion}}</p>
+        <p>Apto para {{alojamiento?.capacidad_personas}} personas</p>
+      
+        <h4>Descripción</h4>
+        <p>{{alojamiento?.descripcion}}</p>
+
+      </div>
+
+      <div class="reservation-actions">
+        
+        <p>${{alojamiento?.precio_por_noche}} USD por 2 noches</p>
+        <button>Reservar</button>
+        <sub>No vamos a cobrarte ningún cargo por el momento</sub>
+      </div>
+    </div>
+
+  </div>
+</div>

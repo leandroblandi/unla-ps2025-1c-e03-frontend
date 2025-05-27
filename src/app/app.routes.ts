@@ -3,6 +3,8 @@ import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AllAcommodationsComponent } from './home/all-acommodations/all-acommodations.component';
 import { AllExperiencesComponent } from './home/all-experiences/all-experiences.component';
+import { AcommodationDetailComponent } from './home/acommodation-detail/acommodation-detail.component';
+import { ExperienceDetailComponent } from './home/experience-detail/experience-detail.component';
 
 
 /**
@@ -46,14 +48,14 @@ export const routes: Routes = [
   // Detalle de alojamientos
   {
     path: "acommodations/:id",
-    component: AllExperiencesComponent
+    component: AcommodationDetailComponent
   },
 
 
   // Detalle de experiencias
   {
     path: "experiences/:id",
-    component: AllExperiencesComponent
+    component: ExperienceDetailComponent
   },
 
 

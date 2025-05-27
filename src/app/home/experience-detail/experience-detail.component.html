@@ -1,0 +1,32 @@
+<div class="experience-detail">
+
+  <div class="detail-header">
+    <h1>{{experiencia?.titulo}}</h1>
+  </div>
+
+  <div class="detail-body">
+    
+    <div class="detail-image-container">
+      <img class="main-image" [src]="experiencia!.url_imagenes[0]" [alt]="experiencia!.descripcion">
+      <img class="small-image" src="https://placehold.co/240x250/png">
+      <img class="small-image" src="https://placehold.co/240x250/png">
+    </div>
+
+    <div class="flex-container">
+      <div class="detail-info">
+        <p>Propiedad alquilada entera en {{experiencia?.direccion}}</p>
+        <p>{{experiencia?.tiene_cupo ? "Aún hay cupos" : "Ya no hay cupos disponibles" }}</p>
+        <h4>Descripción</h4>
+        <p>{{experiencia?.descripcion}}</p>
+      </div>
+      <div class="reservation-actions">
+        <p class="cost-info">${{experiencia?.precio_por_persona}} USD por persona</p>
+        <button>Reservar</button>
+        <p class="info">
+          <sub>No vamos a cobrarte ningún cargo por el momento</sub>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

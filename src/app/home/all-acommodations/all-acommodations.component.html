@@ -14,34 +14,7 @@
         <div class="acommodation" [routerLink]="['/acommodations', alojamiento.id_alojamiento]" >
           
           <div class="acommodation-img">
-            <img src="https://placehold.co/240x250/png" [alt]="alojamiento.titulo">
-            <button class="favorite-button">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-          </div>
-          <p [title]="alojamiento.titulo">{{alojamiento.titulo}}</p>
-          <span>${{alojamiento.precio_por_noche}} USD por noche • {{alojamiento.capacidad_personas}} personas</span>
-        </div>
-      }
-
-    </div>
-  </div>
-
-  <div class="acommodations-group">
-
-    <div class="acommodation-group-title">
-      <h2>Alojamientos populares en Córdoba</h2>
-      <i class="fa-solid fa-chevron-right"></i>
-    </div>
-
-    <div class="acommodations-group-accomodations">
-
-      @for (alojamiento of alojamientos; track $index) 
-      {
-        <div class="acommodation" [routerLink]="['/acommodations', alojamiento.id_alojamiento]" >
-          
-          <div class="acommodation-img">
-            <img src="https://placehold.co/240x250/png" [alt]="alojamiento.titulo">
+            <img [src]="alojamiento.url_imagenes[0]" [alt]="alojamiento.titulo">
             <button class="favorite-button">
               <i class="fa-regular fa-heart"></i>
             </button>

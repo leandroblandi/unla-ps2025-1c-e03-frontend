@@ -1,9 +1,64 @@
 .register {
-  width: 95%;
-  background: transparent;
+  width: fit-content;
+  background: #fafafa;
   border-radius: 20px;
   margin: 40px auto;
   font-weight: 600;
   color: #464f6d;
   font-size: 15px;
+  padding: 40px 50px;
+}
+
+.register-header h3 {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.register .register-input {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.register-input label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.register-input input {
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 15px;
+  outline: 0 none;
+}
+
+input::placeholder {
+  font-weight: 500;
+  color: #999;
+}
+
+.register-submit {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.register-submit button {
+  width: 100%;
+  border: none;
+  padding: 15px 0;
+  font-size: 15px;
+  background: #ff5a5f;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .2s;
+  font-weight: 600;
+}
+
+.register-submit button:hover {
+  background: #c54549;
+  transition: all .2s;
 }

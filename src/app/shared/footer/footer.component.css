@@ -72,11 +72,13 @@
   gap: 15px;
 }
 
-.section.info span.words {
+.section.info a.words {
+  color: #464f6d;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.section.info span.words:hover {
+.section.info a.words:hover {
   text-decoration: underline;
 }
 

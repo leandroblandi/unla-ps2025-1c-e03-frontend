@@ -13,7 +13,7 @@ export interface Usuario {
 })
 export class AuthService {
   private key = 'usuarios';
-  private sessionKey = 'usuarioLogueado';
+  private sessionKey = 'usuario_logueado';
 
   constructor() {}
 

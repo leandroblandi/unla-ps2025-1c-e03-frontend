@@ -9,7 +9,7 @@
 
       @for (alojamiento of favoritos; track $index) 
       {
-        <div class="acommodation">
+        <div class="acommodation" [routerLink]="['/acommodations', alojamiento.id_alojamiento]">
           
           <div class="acommodation-img">
             <img [src]="alojamiento.url_imagenes[0]" [alt]="alojamiento.titulo">

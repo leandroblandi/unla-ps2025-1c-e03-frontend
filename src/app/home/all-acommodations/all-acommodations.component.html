@@ -16,7 +16,9 @@
           <div class="acommodation-img">
             <img [src]="alojamiento.url_imagenes[0]" [alt]="alojamiento.titulo">
             @if (logueado) {
-              <button class="favorite-button" [class.favorito]="favoritosService.esFavorito(alojamiento.id_alojamiento)"  (click)="handleFavorite(alojamiento.id_alojamiento)">
+              <button class="favorite-button" 
+                      [class.favorito]="favoritosService.esFavorito(alojamiento.id_alojamiento)"  
+                      (click)="handleFavorite(alojamiento.id_alojamiento); $event.stopPropagation()">
                 <i class="fa-regular fa-heart"></i>
               </button>
             }

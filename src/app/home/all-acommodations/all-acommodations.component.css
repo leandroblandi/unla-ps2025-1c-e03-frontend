@@ -112,6 +112,11 @@
   transition: all .2s;
 }
 
+.favorito i {
+  color: #e44a4f;
+  transform: scale(1.5);
+}
+
 @media (max-width: 600px) {
 
   

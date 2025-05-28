@@ -1,0 +1,23 @@
+<div class="favorites-list">
+  
+  <div class="favorites-list-header">
+    <h1>Mis favoritos</h1>
+    <p>Aquí podrás ver todas las propiedades que has marcado como favoritas</p>
+  </div>
+
+  <div class="acommodations-group-accomodations">
+
+      @for (alojamiento of favoritos; track $index) 
+      {
+        <div class="acommodation">
+          
+          <div class="acommodation-img">
+            <img [src]="alojamiento.url_imagenes[0]" [alt]="alojamiento.titulo">
+          </div>
+          <p [title]="alojamiento.titulo">{{alojamiento.titulo}}</p>
+          <span>${{alojamiento.precio_por_noche}} USD por noche • {{alojamiento.capacidad_personas}} personas</span>
+        </div>
+      }
+
+    </div>
+</div>

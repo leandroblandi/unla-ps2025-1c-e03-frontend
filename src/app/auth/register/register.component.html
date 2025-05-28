@@ -6,31 +6,34 @@
 
   <div class="register-input">
     <label>Nombres</label>
-    <input type="text" autocomplete="off" placeholder="Juan Ignacio">
+    <input type="text" [(ngModel)]="firstName" autocomplete="off" placeholder="Juan Ignacio">
   </div>
 
   <div class="register-input">
     <label>Apellidos</label>
-    <input type="text" autocomplete="off" placeholder="Perez">
+    <input type="text" [(ngModel)]="lastName" autocomplete="off" placeholder="Perez">
   </div>
 
   <div class="register-input">
     <label>E-Mail</label>
-    <input type="email" autocomplete="off" placeholder="juan_perez@company.com">
+    <input type="email" [(ngModel)]="email" autocomplete="off" placeholder="juan_perez@company.com">
   </div>
 
   <div class="register-input">
     <label>Usuario</label>
-    <input type="text" autocomplete="off" placeholder="juan_perez">
+    <input type="text" [(ngModel)]="username" autocomplete="off" placeholder="juan_perez">
   </div>
 
   <div class="register-input">
     <label>Contraseña</label>
-    <input type="password" autocomplete="off" placeholder="•••••••••••••">
+    <input type="password" [(ngModel)]="password" autocomplete="off" placeholder="•••••••••••••">
   </div>
   <div class="register-submit">
-    <button>
-      Iniciar sesión
+
+    <p>{{error}}</p>
+
+    <button (click)="onSubmit()">
+      Registrarse
     </button>
   </div>
 </div>

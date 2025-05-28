@@ -170,6 +170,39 @@
   font-weight: 600;
 }
 
+.user-info {
+  padding: 20px 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+  outline: 0 none;
+}
+
+.user-info:hover {
+  background-color: #dfdfdf;
+}
+
+.user-info .initials {
+  display: block;
+  border-radius: 100%;
+  background: #000;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.user-info .fullname {
+  font-weight: 600;
+  font-size: 15px;
+  color: #464f6d;
+}
+
 @media (max-width: 870px) {
 
   .logo-section img {

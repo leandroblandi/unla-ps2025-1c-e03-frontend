@@ -5,6 +5,8 @@ import { AllAcommodationsComponent } from './home/all-acommodations/all-acommoda
 import { AllExperiencesComponent } from './home/all-experiences/all-experiences.component';
 import { AcommodationDetailComponent } from './home/acommodation-detail/acommodation-detail.component';
 import { ExperienceDetailComponent } from './home/experience-detail/experience-detail.component';
+import { UserDetailComponent } from './home/user-detail/user-detail.component';
+import { FavoritesListComponent } from './home/favorites-list/favorites-list.component';
 
 
 /**
@@ -45,6 +47,11 @@ export const routes: Routes = [
     component: AllExperiencesComponent
   },
 
+  {
+    path: "my-favorites",
+    component: FavoritesListComponent
+  },
+
   // Detalle de alojamientos
   {
     path: "acommodations/:id",
@@ -58,6 +65,10 @@ export const routes: Routes = [
     component: ExperienceDetailComponent
   },
 
+  {
+    path: "my-profile",
+    component: UserDetailComponent
+  },
 
   // Cualquier otra ruta, redirige a listado de experiencias
   {

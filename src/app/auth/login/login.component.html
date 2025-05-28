@@ -6,14 +6,17 @@
 
   <div class="login-input">
     <label>Usuario</label>
-    <input type="text" autocomplete="off" placeholder="juan_perez">
+    <input type="text" [(ngModel)]="username" autocomplete="off" placeholder="juan_perez">
   </div>
   <div class="login-input">
     <label>Contraseña</label>
-    <input type="password" autocomplete="off" placeholder="•••••••••••••">
+    <input type="password" [(ngModel)]="password" autocomplete="off" placeholder="•••••••••••••">
   </div>
   <div class="login-submit">
-    <button>
+
+    <p>{{error}}</p>
+
+    <button (click)="onSubmit()">
       Iniciar sesión
     </button>
   </div>

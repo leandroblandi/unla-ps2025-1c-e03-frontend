@@ -1,0 +1,18 @@
+
+.user-detail {
+  width: 95%;
+  background: transparent;
+  border-radius: 20px;
+  margin: 10px auto 30px;
+  font-weight: 600;
+  color: #222;
+  font-size: 15px;   
+}
+
+.user-detail .user-detail-header {
+  margin-bottom: 50px;
+}
+
+.user-detail .user-detail-body .info-section {
+  margin: 20px 0;
+}

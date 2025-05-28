@@ -1,0 +1,41 @@
+
+<div class="user-detail">
+
+  @if (logueado) {
+
+    <div class="user-detail-header">
+      <h1>Mis datos personales</h1>
+      <p>Recordá que tus datos personales no podrás modificarlos una vez registrado en el sistema</p>
+    </div>
+
+    <div class="user-detail-body">
+      <div class="info-section">
+        <p class="name-info">
+          <b>
+            Nombre y apellido: 
+          </b>
+          {{ usuario?.firstName + ' ' + usuario?.lastName}}
+        </p>
+      </div>
+  
+      <div class="info-section">
+        <p class="email-info">
+          <b>
+            E-Mail: 
+          </b>
+          {{ usuario?.email }}
+        </p>
+      </div>
+  
+      <div class="info-section">
+        <p class="username-info">
+          <b>
+            Nombre de usuario: 
+          </b>
+          {{ usuario?.username }}
+        </p>
+      </div>
+    </div>
+  }
+
+</div>

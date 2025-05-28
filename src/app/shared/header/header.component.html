@@ -32,8 +32,20 @@
 
     @if (abrirMenu) {
       <ul class="auth-menu">
-        <li><a routerLink="/register">Registrarse</a></li>
-        <li><a routerLink="/login" class="a-iniciar-sesion" >Iniciar sesión</a></li>
+
+        @if (logueado) {
+          
+          <div class="user-info" routerLink="/my-profile">
+            <p class="initials">{{inicialesUsuario}}</p>
+            <p class="fullname">{{this.usuarioLogueado?.firstName + ' ' + this.usuarioLogueado?.lastName}}</p>
+          </div>
+          <li><a routerLink="/my-favorites">Mis favoritos</a></li>
+          <li><a routerLink="/acommodations" (click)="handleLogout()">Cerrar sesión</a></li>
+          
+        } @else {
+          <li><a routerLink="/register">Registrarse</a></li>
+          <li><a routerLink="/login" class="a-iniciar-sesion" >Iniciar sesión</a></li>
+        }
       </ul>
     }
   </div>

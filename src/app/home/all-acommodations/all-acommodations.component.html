@@ -15,9 +15,11 @@
           
           <div class="acommodation-img">
             <img [src]="alojamiento.url_imagenes[0]" [alt]="alojamiento.titulo">
-            <button class="favorite-button">
-              <i class="fa-regular fa-heart"></i>
-            </button>
+            @if (logueado) {
+              <button class="favorite-button" [class.favorito]="favoritosService.esFavorito(alojamiento.id_alojamiento)"  (click)="handleFavorite(alojamiento.id_alojamiento)">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            }
           </div>
           <p [title]="alojamiento.titulo">{{alojamiento.titulo}}</p>
           <span>${{alojamiento.precio_por_noche}} USD por noche • {{alojamiento.capacidad_personas}} personas</span>

@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Alojamiento } from '../models/alojamiento.model';
 import { Experiencia } from '../models/experiencia.model';
 
 @Injectable({

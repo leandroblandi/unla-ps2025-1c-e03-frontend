@@ -11,9 +11,6 @@
         <div class="experience" [routerLink]="['/experiences', experiencia.id_experiencia]" >
           <div class="experience-img">
             <img [src]="experiencia.url_imagenes[0]" [alt]="experiencia.titulo">
-            <button class="favorite-button">
-              <i class="fa-regular fa-heart"></i>
-            </button>
           </div>
           <p [title]="experiencia.titulo">{{experiencia.titulo}}</p>
           <span>${{experiencia.precio_por_persona}} USD por noche • {{ experiencia.tiene_cupo ? "Aún hay cupos" : "Ya no hay cupos" }}</span>
